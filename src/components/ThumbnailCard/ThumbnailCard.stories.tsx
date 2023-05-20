@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import ThumbnailCard from "../../components/ThumbnailCard/ThumbnailCard";
+import ThumbnailCard from "./ThumbnailCard";
 
 const meta: Meta<typeof ThumbnailCard> = {
   /* 👇 The title prop is optional.
@@ -21,8 +21,8 @@ type Story = StoryObj<typeof ThumbnailCard>;
  */
 export const Primary: Story = {
   args: {
-    cardTitle: "title",
-    cardSubTitle: "sub title",
+    cardTitle: "Movie Title",
+    cardSubTitle: "Action/Drama",
     imgSrc:
       "https://fastly.picsum.photos/id/983/200/200.jpg?hmac=dWGIQKhPUTlF4pkeYDou10SJkQTJDRGf4usmJS38cNY",
   },
