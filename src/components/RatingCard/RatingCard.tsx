@@ -11,8 +11,10 @@ const RatingCard: React.FC<RatingCardProps> = ({
 }) => {
   return (
     <>
-      <div className="thumnailCard text-left w-32">
-        <span>{rating}</span>
+      <div className="thumnailCard py-4 relative max-w-fit">
+        <span className="text-white font-bold top-2	left-9 rounded absolute px-4 bg-amber-500	">
+          {rating}
+        </span>
         <ThumbnailCard
           imgSrc={imgSrc}
           cardTitle={cardTitle}
